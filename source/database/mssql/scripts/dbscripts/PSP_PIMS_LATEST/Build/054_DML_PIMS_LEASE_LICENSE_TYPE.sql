@@ -1,9 +1,10 @@
 /* -----------------------------------------------------------------------------
 Delete all data from the PIMS_LEASE_LICENSE_TYPE table and repopulate.
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 Author        Date         Comment
 ------------  -----------  -----------------------------------------------------
 Doug Filteau  2021-Aug-24  Initial version
+Doug Filteau  2026-Apr-01  PSP-11377  Added MAJORWORX.
 ----------------------------------------------------------------------------- */
 
 DELETE FROM PIMS_LEASE_LICENSE_TYPE
@@ -30,7 +31,8 @@ VALUES
   (N'AMNDAGREE', N'Amending Agreement',                                 0),
   (N'BLDGLSRCV', N'Building Lease (receivable)',                        0),
   (N'LIOCCHMK',  N'Licence of Occupation (HMK fee simple)',             0),
-  (N'LOOBCTFA',  N'Licence of Occupation (BCTFA fee simple)',           0);
+  (N'LOOBCTFA',  N'Licence of Occupation (BCTFA fee simple)',           0),
+  (N'MAJORWORX', N'Major Works Contract/Notice to Contractor',          0);
 GO
 
 -- --------------------------------------------------------------
